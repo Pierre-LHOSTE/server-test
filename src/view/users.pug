@@ -1,0 +1,19 @@
+extends ./layout/layout
+
+block content
+    h1 Utilisateurs
+    table
+        thead
+            tr
+                th Nom
+                th Date d'anniversaire
+                th Action
+        tbody
+            each student in students
+                tr
+                    td= student.name
+                    td= student.birth
+                    td
+                        form(action=`/delete?name=${student.name}`, method="POST", style="display:inline")
+                            button.btn.btn-danger(type="submit") X
+    a(href="/") Ajouter un utilisateur

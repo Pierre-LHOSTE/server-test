@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+main {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 500px;
+  width: 600px;
+}
+
+table {
+  min-width: 500px;
+}
+
+table th {
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: baseline;
+}
+
+nav a {
+  margin-right: 8px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+
+.user form {
+  margin: 0;
+}
